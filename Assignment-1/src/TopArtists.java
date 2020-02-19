@@ -3,7 +3,7 @@ import java.io.*;
 
 public class TopArtists{ 
   public static void main(String[] args) throws Exception {
-    int row = 109;
+    int row = 109;        //the amount of artists excluding repetitions
     int col = 2;
     String[][] StreamList = new String[row][col]; 
     read(StreamList);
