@@ -19,7 +19,7 @@ public class TopArtists{
   
   //reads in data from the csv file and fills the 2D array, arr, which refers to StreamList in Main.
   public static void read(String[][]arr) throws Exception{
-    BufferedReader br = new BufferedReader(new FileReader("regional-global-weekly-2020-01-17--2020-01-24.csv"));
+    BufferedReader br = new BufferedReader(new FileReader("../data/regional-global-weekly-2020-01-17--2020-01-24.csv"));
     String note = br.readLine();
     String titles = br.readLine(); 
     
