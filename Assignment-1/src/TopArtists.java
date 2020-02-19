@@ -90,8 +90,8 @@ class Artist {
     return appearances;
   }
   
-  public void displayArtist(){
-    System.out.println(name + ", " + appearances);
+  public String displayArtist(){
+    return(name + ", " + appearances);
   }
 }
 
@@ -144,11 +144,14 @@ class TopStreamingArtists {
       }  
     }
     
-      public void displayList() {
+  public void displayList() throws Exception{
+    PrintWriter pw = new PrintWriter("ArtistOutput.txt");
     Artist current = first;
     while(current != null){
       current.displayArtist();
+      pw.println(current.displayArtist());
       current = current.next;
     }
+    pw.close();
   }
 }
